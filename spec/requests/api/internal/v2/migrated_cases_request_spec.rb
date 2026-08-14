@@ -335,6 +335,6 @@ RSpec.describe "api/internal/v2/link_migrated_cases", swagger_doc: "v2/swagger.y
   end
 
   def create_migrated_case(status:, suffix:, **overrides)
-    create(:xhibit_migrated_case, status: status, suffix: suffix, **overrides)
+    create(:xhibit_migrated_case, status, suffix: suffix, **overrides)
   end
 end
